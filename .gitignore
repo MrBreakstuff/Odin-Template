@@ -1,55 +1,52 @@
-# Prerequisites
-*.d
+# Build output directory
+build/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
+# Compiled binaries & debug symbols (Windows, Linux, macOS)
+*.exe
 *.dll
 *.so
-*.so.*
 *.dylib
-
-# Executables
-*.exe
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
+*.bin
 *.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.o
+*.a
+*.wasm
+*.dSYM/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Default extensionless binaries if `odin build` is run in root without `-out:`
+/src
+/main
 
-# debug information files
-*.dwo
+# LLVM & Odin intermediate files
+*.ll
+*.bc
+
+# Profilers & debuggers (RAD Debugger, Spall, etc.)
+*.raddbg
+*.rdi
+*.spall
+
+# Odin Language Server (OLS)
+ols.json
+.ols/
+
+# Editors & OS (Windows, macOS, Linux)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Desktop.ini
+
